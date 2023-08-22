@@ -10,3 +10,7 @@ for numero in range(5):
         break
 else:
     print("Numero no encontrado :(")
+
+
+for char in "ultmate python":
+    print(char)
