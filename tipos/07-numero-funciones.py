@@ -1,7 +1,7 @@
 import math
 
-print(round(1.3))
-print(round(1.7))
+print(round(1.3))  # roud devuelve el valor entero mas cercano, en este caso 1
+print(round(1.7))   # roud devuelve el valor entero mas cercano, en este caso 2
 print(round(1.5))
 print(abs(-77))  # abs te entrega el valor absoluto, quita el signo.
 print(abs(55))
