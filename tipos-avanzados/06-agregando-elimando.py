@@ -10,3 +10,5 @@ mascotas.pop()
 del mascotas[1]
 mascotas.clear()
 print(mascotas)
+
+# agregar, eliminar y limpiar listas
