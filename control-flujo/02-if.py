@@ -1,4 +1,5 @@
-edad = 17
+edad = input("Ingrese su edad: ")
+edad = int(edad)
 if edad >= 50:
     print("Puede ver la pelicula con descuento")
 elif edad >= 18:
