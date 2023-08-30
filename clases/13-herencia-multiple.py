@@ -3,11 +3,15 @@ class Animal:
         print("comiendo")
 
 
-class Perro(Animal):
+class Perro:
     def pasear(self):
         print("paseando")
 
 
-class Chanchito(Animal):
+class Chanchito(Perro, Animal):
     def programar(self):
         print("programando")
+
+
+Chanchito = Chanchito()
+Chanchito.pasear()
