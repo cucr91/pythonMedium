@@ -1,12 +1,15 @@
-class Model():
-    tabla = False
+from abc import ABC, abstractclassmethod
 
-    def __init__(self):
-        if not self.tabla:
-            print("Error, Definir tabla")
 
+class Model(ABC):
+    @property
+    @abstractclassmethod
+    def tabla():
+        pass
+
+    @abstractclassmethod
     def guardar(self):
-        print(F"Guardando {self.tabla} en Base de datos")
+        pass
 
     @classmethod
     def buscar_por_id(self, _id):
@@ -15,6 +18,9 @@ class Model():
 
 class Usuario(Model):
     tabla = "Usuario"
+
+    def guardar(self):
+        print("guardando usuario")
 
 
 usuario = Usuario()
